@@ -4687,3 +4687,19 @@ input, select, textarea {
 		}
 
 	}
+	
+	#tagNav ul {
+		list-style: none; /* Remove default list styling */
+		padding: 0; /* Remove default padding */
+		margin: 0; /* Remove default margin */
+		display: flex; /* Use flexbox to arrange items horizontally */
+	}
+	
+	#tagNav li {
+		margin-right: 10px; /* Adjust spacing between buttons if needed */
+	}
+	
+	#tagNav button {
+		display: inline-block; /* Ensure buttons are treated as inline-block elements */
+	}
+	

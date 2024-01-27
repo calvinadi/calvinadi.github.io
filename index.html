@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Calvin Adiwinata Portfolio</title>
@@ -65,7 +60,21 @@
 								</div>
 							</footer> -->
 						<!-- Featured Post -->
-							<article class="post featured">
+
+						<!-- Nav -->
+						<nav id="tagNav">
+							<ul>
+								<li><button onclick="filterProjects('excel')">Excel</button></li>
+								<li><button onclick="filterProjects('python')">Python</button></li>
+								<li><button onclick="filterProjects('sql')">SQL</button></li>
+								<li><button onclick="filterProjects('tableau')">Tableau</button></li>
+								<li><button onclick="filterProjects('powerbi')">Power BI</button></li>
+								<li><button onclick="filterProjects('other')">Other</button></li>
+								<li><button onclick="resetFilter()">Reset</button></li>
+							</ul>
+						</nav>
+
+							<article class="post featured sql">
 								<header class="major">
 									<span class="date">January 1, 2024</span>
 									<h2><a href="https://github.com/calvinadi/dataClean_project" target="_blank">Data Cleaning in SQL<br />
@@ -81,7 +90,7 @@
 
 						<!-- Posts -->	
 							<section class="posts">
-								<article>
+								<article class="sql">
 									<header>
 										<span class="date">December 31, 2023</span>
 										<h2><a href="https://github.com/calvinadi/covidProjects-Data-Exploration" target="_blank">COVID 19 Data Exploration
@@ -93,7 +102,8 @@
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul> -->
 								</article>
-								<article>
+
+								<article class ="tableau">
 									<header>
 										<span class="date">January 4, 2024</span>
 										<h2><a href="https://public.tableau.com/app/profile/calvin.adiwinata/viz/airBnB_projects/Dashboard1" target="_blank">Airbnb Data Visualization<br />
@@ -101,11 +111,9 @@
 									</header>
 									<a href="https://public.tableau.com/app/profile/calvin.adiwinata/viz/airBnB_projects/Dashboard1" target="_blank" class="image fit"><img src="images/airbnb.jpg" alt="" /></a>
 									<p>In this project, I make a data visualization in tabluau, about Airbnb data. Dataset is obtained from <a href = "https://www.kaggle.com/datasets/alexanderfreberg/airbnb-listings-2016-dataset" target="_blank"><b>kaggle</b></a>. The goal is to help businesses understand which number of bedrooms generates the most profit, identify the best locations for this business, and determine when the highest number of bookings occur. This information will enable the company to formulate an effective plan for its operations.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
 								</article>
-								<article>
+
+								<article class="python">
 									<header>
 										<span class="date">January 12, 2024</span>
 										<h2><a href="https://github.com/calvinadi/python_Projects/blob/main/BMI%20Calculator.ipynb" target="_blank">BMI Calculator<br />
@@ -113,11 +121,9 @@
 									</header>
 									<a href="https://github.com/calvinadi/python_Projects/blob/main/BMI%20Calculator.ipynb" class="image fit" target="_blank"><img src="images/BMI.jpg" alt="" /></a>
 									<p>In this small project, I create a BMI calculator in Jupyter Notebook, using Python.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
 								</article>
-								<article>
+
+								<article class="python">
 									<header>
 										<span class="date">January 12, 2024</span>
 										<h2><a href="https://github.com/calvinadi/python_Projects/blob/main/Automatic%20File%20Sorter%20in%20File%20Explorer.ipynb" target="_blank">Automatic File Sorter in File Explorer<br />
@@ -129,7 +135,8 @@
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul> -->
 								</article>
-								<article>
+
+								<article class="excel">
 									<header>
 										<span class="date">January 4, 2024</span>
 										<h2><a href="https://github.com/calvinadi/excel_data_analyst/blame/main/Excel%20Project%20Dataset.xlsx" target="_blank">Bike Sales Analysis in Excel<br />
@@ -138,11 +145,9 @@
 									<a href="https://github.com/calvinadi/excel_data_analyst/blame/main/Excel%20Project%20Dataset.xlsx" target="_blank" class="image fit"><img src="images/bike_sales.png" alt="" /></a>
 									<p>In this project, I analyze the bike sales data. I use Excel to do some data analysis and visualization.<br /
 									</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
 								</article>
-								<article>
+
+								<article class="excel powerbi">
 									<header>
 										<span class="date">January 8, 2024</span>
 										<h2><a href="https://github.com/calvinadi/bike_sales_analysis_excel" target="_blank">Data Professional Survey Analysis in PowerBI<br />
@@ -153,6 +158,16 @@
 									<!-- <ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul> -->
+								</article>
+
+								<article class="other sql">
+									<header>
+										<span class="date">January 27, 2024</span>
+										<h2><a href="https://github.com/calvinadi/rakamin_muamalat_dashboard" target="_blank">Sales Dashboard in Google Looker<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/calvinadi/rakamin_muamalat_dashboard" target="_blank" class="image fit"><img src="images/rakamin_muamalat_sales_dashboard.png" alt="" /></a>
+									<p>In this project, I make a data visualization in <a href = "https://lookerstudio.google.com/s/m9ddLEmrDTE" target="_blank">Google Looker</a>, I use BigQuery to make the master table first before importing the table to Looker.</p>
 								</article>
 							</section>
 
@@ -203,7 +218,6 @@
 					<div id="copyright">
 						<ul><li>&copy; Calvin</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
-
 			</div>
 
 		<!-- Scripts -->
@@ -214,6 +228,38 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+			<script>
+				function filterProjects(tag) {
+					// Hide all articles
+					var articles = document.querySelectorAll('.posts article, .post.featured');
+					articles.forEach(function (article) {
+						article.style.display = 'none';
+					});
+			
+					if (tag === 'all') {
+						// Show all articles when 'all' is selected
+						articles.forEach(function (article) {
+							article.style.display = 'block';
+						});
+					} else {
+						// Show articles with the selected tag
+						var filteredArticles = document.querySelectorAll('.' + tag);
+						filteredArticles.forEach(function (article) {
+							article.style.display = 'block';
+						});
+					}
+				}
+			
+				function resetFilter() {
+					// Show all articles
+					var articles = document.querySelectorAll('.posts article, .post.featured');
+					articles.forEach(function (article) {
+						article.style.display = 'block';
+					});
+				}
+			</script>
+			
+			
 	</body>
 </html>
