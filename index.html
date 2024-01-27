@@ -44,6 +44,11 @@
 						</ul>
 					</nav>
 
+					<div id="scroll-buttons">
+						<button onclick="scrollToTop()">Up</button>
+						<button onclick="scrollToBottom()">Down</button>
+					</div>
+					
 				<!-- Main -->
 					<div id="main">
 						<!-- <footer>
@@ -269,8 +274,53 @@
 						article.style.display = 'block';
 					});
 				}
+			</script>			
+			<!-- <script>
+				function scrollToTop() {
+					// Scroll to the top of the page
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				}
+
+				function scrollToBottom() {
+					// Scroll to the bottom of the page
+					window.scrollTo({
+						top: document.body.scrollHeight,
+						behavior: 'smooth'
+					});
+				}
+			</script> -->
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					var scrollButtonsContainer = document.getElementById('scroll-buttons');
+					var scrollUpButton = document.getElementById('scrollUp');
+					var scrollDownButton = document.getElementById('scrollDown');
+			
+					window.addEventListener('scroll', function () {
+						// Show the buttons with a fade-in effect
+						if (window.scrollY > 100) {
+							scrollButtonsContainer.style.display = 'flex';
+							scrollButtonsContainer.style.opacity = '1';
+						} else {
+							// Hide the buttons with a fade-out effect
+							scrollButtonsContainer.style.opacity = '0';
+							setTimeout(function () {
+								scrollButtonsContainer.style.display = 'none';
+							}, 500); // Adjust the duration of the fade-out effect (in milliseconds)
+						}
+					});
+				});
+			
+				function scrollToTop() {
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				}
+			
+				function scrollToBottom() {
+					window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+				}
 			</script>
-			
-			
 	</body>
 </html>
